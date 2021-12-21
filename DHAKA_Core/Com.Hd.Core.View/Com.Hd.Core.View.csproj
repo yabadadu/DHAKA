@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{89018B47-70F2-4ACD-8CE0-063E9DDF8544}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Com.Hd.Core.View</RootNamespace>
+    <AssemblyName>Com.Hd.Core.View</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Com.Hd.Core.Basis, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SK_IT_CSHARP_DLL\Com.Hd.Core.Basis.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Control\HToolStripDropDownButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\HVScrollBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\HCheckedListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\HButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\HCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\HComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\HContextMenuStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\HDateTimePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\HFlowLayoutPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\HForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\HGroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\HHScrollBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\HLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\HLinkLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\HListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\HListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\HMenuStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\HNumericUpDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\HPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\HProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\HPropertyGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\HRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\HRichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\HSplitContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\HTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\HTableLayoutPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\HTabPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\HTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\HToolStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\HToolStripButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\HToolStripComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\HToolStripLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\HToolStripMenuItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\HToolStripSeparator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\HTrackBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\HTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\Interface\IHBaseControl.cs" />
+    <Compile Include="Control\Interface\IHCulture.cs" />
+    <Compile Include="Control\Interface\IHAppInitialization.cs" />
+    <Compile Include="Control\Interface\IHForm.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Template\BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Constant\" />
+    <Folder Include="Coordinator\" />
+    <Folder Include="Helper\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
