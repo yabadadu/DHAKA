@@ -1,0 +1,11 @@
+C:\AWS\LightweightTOS\SK_IT_Core\Com.Hd.Core.Basis\bin\Debug\Com.Hd.Core.Basis.dll
+C:\AWS\LightweightTOS\SK_IT_Core\Com.Hd.Core.Basis\bin\Debug\Com.Hd.Core.Basis.pdb
+C:\AWS\LightweightTOS\SK_IT_Core\Com.Hd.Core.Basis\obj\Debug\Com.Hd.Core.Basis.csprojResolveAssemblyReference.cache
+C:\AWS\LightweightTOS\SK_IT_Core\Com.Hd.Core.Basis\obj\Debug\Com.Hd.Core.Basis.dll
+C:\AWS\LightweightTOS\SK_IT_Core\Com.Hd.Core.Basis\obj\Debug\Com.Hd.Core.Basis.pdb
+C:\Users\hmx200171\Documents\다카공항\TCS\DACA_Core\Com.Hd.Core.Basis\bin\Debug\Com.Hd.Core.Basis.dll
+C:\Users\hmx200171\Documents\다카공항\TCS\DACA_Core\Com.Hd.Core.Basis\bin\Debug\Com.Hd.Core.Basis.pdb
+C:\Users\hmx200171\Documents\다카공항\TCS\DACA_Core\Com.Hd.Core.Basis\obj\Debug\Com.Hd.Core.Basis.csproj.AssemblyReference.cache
+C:\Users\hmx200171\Documents\다카공항\TCS\DACA_Core\Com.Hd.Core.Basis\obj\Debug\Com.Hd.Core.Basis.csproj.CoreCompileInputs.cache
+C:\Users\hmx200171\Documents\다카공항\TCS\DACA_Core\Com.Hd.Core.Basis\obj\Debug\Com.Hd.Core.Basis.dll
+C:\Users\hmx200171\Documents\다카공항\TCS\DACA_Core\Com.Hd.Core.Basis\obj\Debug\Com.Hd.Core.Basis.pdb

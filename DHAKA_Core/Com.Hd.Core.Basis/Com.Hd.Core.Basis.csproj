@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{70F5E8DF-342B-4F52-A7BA-43C87D01AB00}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Com.Hd.Core.Basis</RootNamespace>
+    <AssemblyName>Com.Hd.Core.Basis</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CacheManage\BaseCodeHandler.cs" />
+    <Compile Include="CacheManage\CacheDataProvider.cs" />
+    <Compile Include="CacheManage\CodeCacheDeligator.cs" />
+    <Compile Include="CacheManage\CacheManager.cs" />
+    <Compile Include="CacheManage\CacheProvider.cs" />
+    <Compile Include="CacheManage\CodeCacheParam.cs" />
+    <Compile Include="CacheManage\CodeGroupTypes.cs" />
+    <Compile Include="CacheManage\CodeManager.cs" />
+    <Compile Include="Config\AppConfigurationManager.cs" />
+    <Compile Include="Config\BaseFileConfigurationManager.cs" />
+    <Compile Include="Config\ConfigManagerContext.cs" />
+    <Compile Include="Config\ConfigType.cs" />
+    <Compile Include="Config\CustomConfigurationManager.cs" />
+    <Compile Include="Config\IAppConfigurationManager.cs" />
+    <Compile Include="Config\IConfigurationManager.cs" />
+    <Compile Include="Config\IFileConfigurationManager.cs" />
+    <Compile Include="Config\Language\CultureModeType.cs" />
+    <Compile Include="Config\Language\CultureRsrcType.cs" />
+    <Compile Include="Helper\GlobalizationHelper.cs" />
+    <Compile Include="Constant\AppConfigConstant.cs" />
+    <Compile Include="Constant\BasisContextConstant.cs" />
+    <Compile Include="Constant\ConfigConstant.cs" />
+    <Compile Include="Constant\LanguageConstant.cs" />
+    <Compile Include="Constant\SystemConstants.cs" />
+    <Compile Include="Data\Item\IBaseItem.cs" />
+    <Compile Include="Data\Param\IBaseParam.cs" />
+    <Compile Include="Helper\InitializeHelper.cs" />
+    <Compile Include="Helper\SystemDiagnosticsHelper.cs" />
+    <Compile Include="Initializer\IBaseInitializer.cs" />
+    <Compile Include="Config\Language\LanguageInfoSection.cs" />
+    <Compile Include="Config\Language\LanguageManager.cs" />
+    <Compile Include="Config\Language\LanguageResourceCollection.cs" />
+    <Compile Include="Config\Language\LanguageResourceElement.cs" />
+    <Compile Include="Config\Language\LanguageResourceSection.cs" />
+    <Compile Include="Object\ObjectContextHelper.cs" />
+    <Compile Include="Program\AppInfoHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\ConfigPathUtil.cs" />
+    <Compile Include="Util\PathUtil.cs" />
+    <Compile Include="Util\StringUtil.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Context\" />
+    <Folder Include="Event\" />
+    <Folder Include="Exception\" />
+    <Folder Include="Log\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
