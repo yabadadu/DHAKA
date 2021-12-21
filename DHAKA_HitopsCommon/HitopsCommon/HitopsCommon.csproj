@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0B1379A0-A024-4E59-8A83-1940531CD5DB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HitopsCommon</RootNamespace>
+    <AssemblyName>HitopsCommon</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'TestDebug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\TestDebug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'TestDebug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\TestDebug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CommonClass, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DACA_CommonClass\CommonClass\bin\Debug\CommonClass.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SK_IT_CSHARP_DLL\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SK_IT_CSHARP_DLL\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SK_IT_CSHARP_DLL\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SK_IT_CSHARP_DLL\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v18.2">
+    </Reference>
+    <Reference Include="DevExpress.Utils.v18.2">
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v18.2">
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v18.2">
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v18.2">
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v18.2">
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v18.2, Version=18.2.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Hitops">
+      <HintPath>..\..\SK_IT_CSHARP_DLL\Hitops.DLL</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.12.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\..\SK_IT_SUNKWNAG_APPLICATION\packages\log4net.2.0.12\lib\net45\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="TextEditCodeListPairItem.cs" />
+    <Compile Include="BaseItem.cs" />
+    <Compile Include="Logger\BaseLogger.cs" />
+    <Compile Include="CommFunc.cs" />
+    <Compile Include="Controls\Hitops_ComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Hitops_GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Hitops_Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Hitops_TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportField.cs" />
+    <Compile Include="FormTemplate\BaseGridCommon.cs" />
+    <Compile Include="FormTemplate\BaseMultiGridView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTemplate\BaseSingleGridView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTemplate\BaseView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTemplate\BaseView.Designer.cs">
+      <DependentUpon>BaseView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmExMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExMessageBox.designer.cs">
+      <DependentUpon>frmExMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GetGeneralCodeType.cs" />
+    <Compile Include="GetMainCodeItemType.cs" />
+    <Compile Include="GetMainCodeOpt.cs" />
+    <Compile Include="GridCommon\CellDrawHelper.cs" />
+    <Compile Include="GridCommon\DragCellsValuesHelper.cs" />
+    <Compile Include="GridCommon\GridInfoItem.cs" />
+    <Compile Include="GridCommon\SelectedCellsBorderHelper.cs" />
+    <Compile Include="GridHelper.cs" />
+    <Compile Include="GridHelpSpec.cs" />
+    <Compile Include="GridHelpSpecCfg.cs" />
+    <Compile Include="GridHelpSpecInfo.cs" />
+    <Compile Include="IniFileTool.cs" />
+    <Compile Include="ListViewSorter.cs" />
+    <Compile Include="Logger\LogLevel.cs" />
+    <Compile Include="Logger\LogWriter.cs" />
+    <Compile Include="MessageFormat\MsgContract.cs" />
+    <Compile Include="MessageFormat\MsgProtocols.cs" />
+    <Compile Include="MessageManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\BaseReportParam.cs" />
+    <Compile Include="Reports\BaseReportView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\BaseReportView.Designer.cs">
+      <DependentUpon>BaseReportView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportManager.cs" />
+    <Compile Include="Request\BaseRequestHandler.cs" />
+    <Compile Include="SetTextFormatType.cs" />
+    <Compile Include="SortUtils.cs" />
+    <Compile Include="TMNPORTCODE.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\Hitops_ComboBox.resx">
+      <DependentUpon>Hitops_ComboBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExMessageBox.resx">
+      <DependentUpon>frmExMessageBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\BaseReportView.resx">
+      <DependentUpon>BaseReportView.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Standard_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Standard_05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Standard_06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Standard_08.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Standard_28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Standard_29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BUTTON_90.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BUTTON_50.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BUTTON_60.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BUTTON_70.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Standard_Inquiry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Standard_Insert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Standard_Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\landscape.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\portrait.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BUTTON_80.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Standard_09.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Standard_14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Standard_33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Standard_30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Top_BG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Standard_TextViewClose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Standard_TextViewOpen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Monitoring_BayColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Standard_071.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Monitoring_JobControl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Actions_Add.png" />
+    <Content Include="Resources\Actions_Edit.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

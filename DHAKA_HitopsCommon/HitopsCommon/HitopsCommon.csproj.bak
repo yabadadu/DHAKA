@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0B1379A0-A024-4E59-8A83-1940531CD5DB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HitopsCommon</RootNamespace>
+    <AssemblyName>HitopsCommon</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'TestDebug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\TestDebug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'TestDebug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\TestDebug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v17.2">
+    </Reference>
+    <Reference Include="DevExpress.Utils.v17.2">
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v17.2">
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v17.2">
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v17.2">
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v17.2">
+    </Reference>
+    <Reference Include="FarPoint.CalcEngine, Version=4.0.2018.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <HintPath>..\..\..\DLL\FarPoint.CalcEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Excel, Version=4.0.2018.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <HintPath>..\..\..\DLL\FarPoint.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.PluginCalendar.WinForms, Version=4.0.2012.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <HintPath>..\..\..\DLL\FarPoint.PluginCalendar.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Win, Version=4.0.2012.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <HintPath>..\..\..\DLL\FarPoint.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Win.Spread, Version=4.0.2012.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <HintPath>..\..\..\DLL\FarPoint.Win.Spread.dll</HintPath>
+    </Reference>
+    <Reference Include="Hitops">
+      <HintPath>..\..\DLL\Hitops.DLL</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommFunc.cs" />
+    <Compile Include="Controls\Hitops_ComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Hitops_GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Hitops_Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Hitops_TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportField.cs" />
+    <Compile Include="frmExMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExMessageBox.designer.cs">
+      <DependentUpon>frmExMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrinerHeaderFooterSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrinerHeaderFooterSetup.Designer.cs">
+      <DependentUpon>frmPrinerHeaderFooterSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrintOpts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrintOpts.Designer.cs">
+      <DependentUpon>frmPrintOpts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearch.Designer.cs">
+      <DependentUpon>frmSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSort.Designer.cs">
+      <DependentUpon>frmSort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWorkloadControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWorkloadControl.designer.cs">
+      <DependentUpon>frmWorkloadControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GetGeneralCodeType.cs" />
+    <Compile Include="GetMainCodeItemType.cs" />
+    <Compile Include="GetMainCodeOpt.cs" />
+    <Compile Include="GridHelper.cs" />
+    <Compile Include="GridHelpSpec.cs" />
+    <Compile Include="GridHelpSpecCfg.cs" />
+    <Compile Include="GridHelpSpecInfo.cs" />
+    <Compile Include="IniFileTool.cs" />
+    <Compile Include="ListViewSorter.cs" />
+    <Compile Include="MessageFormat\MsgContract.cs" />
+    <Compile Include="MessageFormat\MsgProtocols.cs" />
+    <Compile Include="PrintModule.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SetTextFormatType.cs" />
+    <Compile Include="SortUtils.cs" />
+    <Compile Include="TMNPORTCODE.cs" />
+    <Compile Include="YardManagement\frmYardForecast.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YardManagement\frmYardForecast.Designer.cs">
+      <DependentUpon>frmYardForecast.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\Hitops_ComboBox.resx">
+      <DependentUpon>Hitops_ComboBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExMessageBox.resx">
+      <DependentUpon>frmExMessageBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrinerHeaderFooterSetup.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPrinerHeaderFooterSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrintOpts.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPrintOpts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearch.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSort.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWorkloadControl.resx">
+      <DependentUpon>frmWorkloadControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YardManagement\frmYardForecast.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmYardForecast.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Standard_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Standard_05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Standard_06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Standard_08.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Standard_28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Standard_29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BUTTON_90.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BUTTON_50.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BUTTON_60.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BUTTON_70.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Standard_Inquiry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Standard_Insert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Standard_Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\landscape.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\portrait.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BUTTON_80.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Standard_09.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Standard_14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Standard_33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Standard_30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Top_BG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Standard_TextViewClose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Standard_TextViewOpen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Monitoring_BayColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Standard_071.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Monitoring_JobControl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\..\DLL\Com.Hd.Common.Service.dll" />
+    <Analyzer Include="..\..\DLL\Com.Hd.Common.View.dll" />
+    <Analyzer Include="..\..\DLL\Com.Hd.Core.Basis.dll" />
+    <Analyzer Include="..\..\DLL\Com.Hd.Core.Data.dll" />
+    <Analyzer Include="..\..\DLL\Com.Hd.Core.Net.dll" />
+    <Analyzer Include="..\..\DLL\Com.Hd.Core.View.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
