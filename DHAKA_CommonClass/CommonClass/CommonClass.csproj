@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A1F61E9A-9FE7-49F5-B838-5116A367CA4C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CommonClass</RootNamespace>
+    <AssemblyName>CommonClass</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Hitops">
+      <HintPath>..\..\SK_IT_CSHARP_DLL\Hitops.DLL</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.12.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\..\SK_IT_SUNKWNAG_APPLICATION\packages\log4net.2.0.12\lib\net45\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Database\DBHandler\Handler_CM_SUNSUK.cs" />
+    <Compile Include="Database\DBHandler\Handler_LSTVESSELBLNOINFO.cs" />
+    <Compile Include="Database\DBHandler\Handler_MA_CC.cs" />
+    <Compile Include="Database\DBHandler\Handler_MA_EMP.cs" />
+    <Compile Include="Database\DBHandler\Handler_MA_PARTNER.cs" />
+    <Compile Include="Database\DBHandler\Handler_CM_IOPLAN.cs" />
+    <Compile Include="Database\DBHandler\Handler_CM_VESSEL.cs" />
+    <Compile Include="Database\DBHandler\Handler_MA_USER.cs" />
+    <Compile Include="Database\DBHandler\Handler_MI_BINNO.cs" />
+    <Compile Include="Database\DBHandler\Handler_MI_CARMEASURE.cs" />
+    <Compile Include="Database\DBHandler\Handler_SC_PU.cs" />
+    <Compile Include="Database\DBHandler\Handler_ST_CARGO.cs" />
+    <Compile Include="Database\DBHandler\Handler_ST_CJAEGO_V_TEST.cs" />
+    <Compile Include="Database\DBHandler\Handler_SY_BONDW.cs" />
+    <Compile Include="Database\DBHandler\Handler_SY_CODEMST.cs" />
+    <Compile Include="Database\DBHandler\Handler_SY_CODE_DET.cs" />
+    <Compile Include="Database\DBHandler\Handler_SY_CODE_DET_MI.cs" />
+    <Compile Include="Database\DBHandler\Handler_SY_COMCOD.cs" />
+    <Compile Include="Database\DBHandler\Handler_SY_COUNTRY.cs" />
+    <Compile Include="Database\DBHandler\Handler_SY_CUSTOM.cs" />
+    <Compile Include="Database\DBHandler\Handler_SY_HATAE.cs" />
+    <Compile Include="Database\DBHandler\Handler_SY_JOB.cs" />
+    <Compile Include="Database\DBHandler\Handler_SY_LINE.cs" />
+    <Compile Include="Database\DBHandler\Handler_SY_PORT.cs" />
+    <Compile Include="Database\DBHandler\Handler_SY_PUM.cs" />
+    <Compile Include="Database\DBHandler\Handler_SY_PUM_DTL.cs" />
+    <Compile Include="Database\DBHandler\Handler_SY_WHS.cs" />
+    <Compile Include="Database\DBHandler\Handler_SY_YARD_DEFINE.cs" />
+    <Compile Include="Database\DBHandler\Handler_TM_OIL.cs" />
+    <Compile Include="Database\DBHandler\Handler_TRANS_CAR_MST.cs" />
+    <Compile Include="Database\DBHandler\Handler_TRANS_LOCATION.cs" />
+    <Compile Include="Database\DBHandler\Handler_TS_CARD.cs" />
+    <Compile Include="Database\DBHandler\Handler_WM_WORKER_INFO.cs" />
+    <Compile Include="Database\DBHandler\Hanlder_CD_COMPANY.cs" />
+    <Compile Include="Database\DBTableCombine\LSTVESSELBLNOINFO.cs" />
+    <Compile Include="Database\DBTable\CD_COMPANY.cs" />
+    <Compile Include="Database\DBTable\CM_IOPLAN.cs" />
+    <Compile Include="Database\DBTable\CM_SUNSUK.cs" />
+    <Compile Include="Database\DBTable\MA_CC.cs" />
+    <Compile Include="Database\DBTable\MA_EMP.cs" />
+    <Compile Include="Database\DBTable\MA_PARTNER.cs" />
+    <Compile Include="Database\DBTable\MA_USER.cs" />
+    <Compile Include="Database\DBTable\MI_BINNO.cs" />
+    <Compile Include="Database\DBTable\MI_CARMEASURE.cs" />
+    <Compile Include="Database\DBTable\SC_PU.cs" />
+    <Compile Include="Database\DBTable\ST_CARGO.cs" />
+    <Compile Include="Database\DBTable\ST_CJAEGO_V_TEST.cs" />
+    <Compile Include="Database\DBTable\SY_BONDW.cs" />
+    <Compile Include="Database\DBTable\SY_CODEMST.cs" />
+    <Compile Include="Database\DBTable\SY_CODE_DET.cs" />
+    <Compile Include="Database\DBTable\SY_COMCOD.cs" />
+    <Compile Include="Database\DBTable\SY_COUNTRY.cs" />
+    <Compile Include="Database\DBTable\SY_CUSTOM.cs" />
+    <Compile Include="Database\DBTable\SY_HATAE.cs" />
+    <Compile Include="Database\DBTable\SY_JOB.cs" />
+    <Compile Include="Database\DBTable\SY_LINE.cs" />
+    <Compile Include="Database\DBTable\SY_PORT.cs" />
+    <Compile Include="Database\DBTable\SY_PUM.cs" />
+    <Compile Include="Database\DBTable\SY_PUM_DTL.cs" />
+    <Compile Include="Database\DBTable\SY_WHS.cs" />
+    <Compile Include="Database\DBTable\SY_YARD_DEFINE.cs" />
+    <Compile Include="Database\DBTable\TM_OIL.cs" />
+    <Compile Include="Database\DBTable\TRANS_CAR_MST.cs" />
+    <Compile Include="Database\DBTable\TRANS_LOCATION.cs" />
+    <Compile Include="Database\DBTable\TS_CARD.cs" />
+    <Compile Include="Database\DBTable\WM_WORKER_INFO.cs" />
+    <Compile Include="Database\DB_TABLE.cs" />
+    <Compile Include="Database\Mapper\BindDB2Class.cs" />
+    <Compile Include="Database\DBTable\CM_VESSEL.cs" />
+    <Compile Include="Logger\BaseLogger.cs" />
+    <Compile Include="Logger\LogLevel.cs" />
+    <Compile Include="Logger\LogWriter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Request\BaseRequestHandler.cs" />
+    <Compile Include="UnipassApi\Common\BaseUnipassResult.cs" />
+    <Compile Include="UnipassApi\CustomsClearancePrgs\CustomsClearancePrgsItem.cs" />
+    <Compile Include="UnipassApi\CustomsClearancePrgs\CustomsClearancePrgsParam.cs" />
+    <Compile Include="UnipassApi\UnipassApiHelper.cs" />
+    <Compile Include="UnipassApi\Service\UnipassApiHelperService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
