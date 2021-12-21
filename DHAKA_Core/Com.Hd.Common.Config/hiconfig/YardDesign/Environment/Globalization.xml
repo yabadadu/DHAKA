@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <appSettings>
+    <add key="UICulture" value="KR" />
+    <add key="Culture" value="en-US" />
+    <!-- SYSTEM, PROGRAM-->
+    <add key="CultureMode" value="PROGRAM" />
+  </appSettings>
+
+</configuration>

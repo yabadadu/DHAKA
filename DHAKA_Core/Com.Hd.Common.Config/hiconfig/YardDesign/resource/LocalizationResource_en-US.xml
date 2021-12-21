@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <configSections>
+    <section name="languageInfo" type="Com.Hd.Core.Basis.Config.Language.LanguageInfoSection, Com.Hd.Core.Basis"/>
+    <section name="languageResource" type="Com.Hd.Core.Basis.Config.Language.LanguageResourceSection, Com.Hd.Core.Basis"/>
+  </configSections>
+
+  <languageInfo>
+    <add key="program" value="Com.Hd.Dsn"/>
+    <add key="version" value="00001"/>
+    <add key="cultureName" value="en_US"/>
+  </languageInfo>
+
+  <languageResource>
+    <add key="wrd-Com.Hd.Dsn.frmYardScaleSet.lblCode" value="Code닷" rscType="WRD" cultureName="en_US" encoding="UTF-8"/>
+    <add key="wrd-com.hd.core.sample.sampleview.cntrno" value="container number" rscType="WRD" cultureName="en_US" encoding="UTF-8"/>
+    <add key="wrd_com.hd.core.sample.sampleview_sampleview" value="sampleDisplay" rscType="WRD" cultureName="en_US" encoding="UTF-8"/>
+    
+    <add key="msg_com.hd.core.sample.sampleview_00001" value="Hellow world" rscType="MSG" cultureName="en_US" encoding="UTF-8"/>
+  </languageResource>
+
+</configuration>
