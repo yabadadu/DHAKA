@@ -242,9 +242,11 @@ C:\Users\hmx200171\Documents\다카공항\DHAKA\TCS\bin\Debug\de\DevExpress.Offi
 C:\Users\hmx200171\Documents\다카공항\DHAKA\TCS\bin\Debug\es\DevExpress.Office.v18.2.Core.resources.dll
 C:\Users\hmx200171\Documents\다카공항\DHAKA\TCS\bin\Debug\ja\DevExpress.Office.v18.2.Core.resources.dll
 C:\Users\hmx200171\Documents\다카공항\DHAKA\TCS\bin\Debug\ru\DevExpress.Office.v18.2.Core.resources.dll
-C:\Users\hmx200171\Documents\다카공항\DHAKA\TCS\obj\Debug\TCS.csprojResolveAssemblyReference.cache
 C:\Users\hmx200171\Documents\다카공항\DHAKA\TCS\obj\Debug\Hmx.DHAKA.TCS.frmMain.resources
 C:\Users\hmx200171\Documents\다카공항\DHAKA\TCS\obj\Debug\Hmx.Skit.SunkwangApp.frmWait.resources
 C:\Users\hmx200171\Documents\다카공항\DHAKA\TCS\obj\Debug\Hmx.DHAKA.TCS.Properties.Resources.resources
 C:\Users\hmx200171\Documents\다카공항\DHAKA\TCS\obj\Debug\TCS.csproj.GenerateResource.Cache
 C:\Users\hmx200171\Documents\다카공항\DHAKA\TCS\obj\Debug\TCS.exe.licenses
+C:\Users\hmx200171\Documents\다카공항\DHAKA\TCS\obj\Debug\TCS.csproj.AssemblyReference.cache
+C:\Users\hmx200171\Documents\다카공항\DHAKA\TCS\obj\Debug\TCS.csproj.CoreCompileInputs.cache
+C:\Users\hmx200171\Documents\다카공항\DHAKA\TCS\obj\Debug\TCS.csproj.CopyComplete

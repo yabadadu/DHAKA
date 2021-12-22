@@ -17,3 +17,10 @@ C:\Users\hmx200171\Documents\다카공항\TCS\DACA_CommonClass\CommonClass\obj\D
 C:\Users\hmx200171\Documents\다카공항\TCS\DACA_CommonClass\CommonClass\obj\Debug\CommonClass.csproj.CopyComplete
 C:\Users\hmx200171\Documents\다카공항\TCS\DACA_CommonClass\CommonClass\obj\Debug\CommonClass.dll
 C:\Users\hmx200171\Documents\다카공항\TCS\DACA_CommonClass\CommonClass\obj\Debug\CommonClass.pdb
+C:\Users\hmx200171\Documents\다카공항\DHAKA\DHAKA_CommonClass\CommonClass\bin\Debug\CommonClass.dll
+C:\Users\hmx200171\Documents\다카공항\DHAKA\DHAKA_CommonClass\CommonClass\bin\Debug\CommonClass.pdb
+C:\Users\hmx200171\Documents\다카공항\DHAKA\DHAKA_CommonClass\CommonClass\obj\Debug\CommonClass.csproj.AssemblyReference.cache
+C:\Users\hmx200171\Documents\다카공항\DHAKA\DHAKA_CommonClass\CommonClass\obj\Debug\CommonClass.csproj.CoreCompileInputs.cache
+C:\Users\hmx200171\Documents\다카공항\DHAKA\DHAKA_CommonClass\CommonClass\obj\Debug\CommonClass.csproj.CopyComplete
+C:\Users\hmx200171\Documents\다카공항\DHAKA\DHAKA_CommonClass\CommonClass\obj\Debug\CommonClass.dll
+C:\Users\hmx200171\Documents\다카공항\DHAKA\DHAKA_CommonClass\CommonClass\obj\Debug\CommonClass.pdb

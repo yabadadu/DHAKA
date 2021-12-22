@@ -15,3 +15,7 @@ C:\Users\hmx200171\Documents\다카공항\TCS\DACA_Core\Com.Hd.Core.View\obj\Deb
 C:\Users\hmx200171\Documents\다카공항\TCS\DACA_Core\Com.Hd.Core.View\obj\Debug\Com.Hd.Core.View.csproj.CopyComplete
 C:\Users\hmx200171\Documents\다카공항\TCS\DACA_Core\Com.Hd.Core.View\obj\Debug\Com.Hd.Core.View.dll
 C:\Users\hmx200171\Documents\다카공항\TCS\DACA_Core\Com.Hd.Core.View\obj\Debug\Com.Hd.Core.View.pdb
+C:\Users\hmx200171\Documents\다카공항\DHAKA\DHAKA_Core\Com.Hd.Core.View\obj\Debug\Com.Hd.Core.View.csproj.AssemblyReference.cache
+C:\Users\hmx200171\Documents\다카공항\DHAKA\DHAKA_Core\Com.Hd.Core.View\obj\Debug\Com.Hd.Core.View.csproj.GenerateResource.cache
+C:\Users\hmx200171\Documents\다카공항\DHAKA\DHAKA_Core\Com.Hd.Core.View\obj\Debug\Com.Hd.Core.View.dll
+C:\Users\hmx200171\Documents\다카공항\DHAKA\DHAKA_Core\Com.Hd.Core.View\obj\Debug\Com.Hd.Core.View.pdb
