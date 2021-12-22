@@ -13,3 +13,5 @@ C:\Users\hmx200171\Documents\다카공항\DHAKA\DHAKA_Core\Com.Hd.Core.Basis\obj
 C:\Users\hmx200171\Documents\다카공항\DHAKA\DHAKA_Core\Com.Hd.Core.Basis\obj\Debug\Com.Hd.Core.Basis.csproj.CoreCompileInputs.cache
 C:\Users\hmx200171\Documents\다카공항\DHAKA\DHAKA_Core\Com.Hd.Core.Basis\obj\Debug\Com.Hd.Core.Basis.dll
 C:\Users\hmx200171\Documents\다카공항\DHAKA\DHAKA_Core\Com.Hd.Core.Basis\obj\Debug\Com.Hd.Core.Basis.pdb
+C:\Users\hmx200171\Documents\다카공항\DHAKA\DHAKA_Core\Com.Hd.Core.Basis\bin\Debug\Com.Hd.Core.Basis.dll
+C:\Users\hmx200171\Documents\다카공항\DHAKA\DHAKA_Core\Com.Hd.Core.Basis\bin\Debug\Com.Hd.Core.Basis.pdb
