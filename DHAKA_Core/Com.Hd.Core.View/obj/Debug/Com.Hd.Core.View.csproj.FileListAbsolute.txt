@@ -19,3 +19,8 @@ C:\Users\hmx200171\Documents\다카공항\DHAKA\DHAKA_Core\Com.Hd.Core.View\obj\
 C:\Users\hmx200171\Documents\다카공항\DHAKA\DHAKA_Core\Com.Hd.Core.View\obj\Debug\Com.Hd.Core.View.csproj.GenerateResource.cache
 C:\Users\hmx200171\Documents\다카공항\DHAKA\DHAKA_Core\Com.Hd.Core.View\obj\Debug\Com.Hd.Core.View.dll
 C:\Users\hmx200171\Documents\다카공항\DHAKA\DHAKA_Core\Com.Hd.Core.View\obj\Debug\Com.Hd.Core.View.pdb
+C:\Users\hmx200171\Documents\다카공항\DHAKA\DHAKA_Core\Com.Hd.Core.View\bin\Debug\Com.Hd.Core.View.dll
+C:\Users\hmx200171\Documents\다카공항\DHAKA\DHAKA_Core\Com.Hd.Core.View\bin\Debug\Com.Hd.Core.View.pdb
+C:\Users\hmx200171\Documents\다카공항\DHAKA\DHAKA_Core\Com.Hd.Core.View\obj\Debug\Com.Hd.Core.View.Properties.Resources.resources
+C:\Users\hmx200171\Documents\다카공항\DHAKA\DHAKA_Core\Com.Hd.Core.View\obj\Debug\Com.Hd.Core.View.csproj.CoreCompileInputs.cache
+C:\Users\hmx200171\Documents\다카공항\DHAKA\DHAKA_Core\Com.Hd.Core.View\obj\Debug\Com.Hd.Core.View.csproj.CopyComplete
