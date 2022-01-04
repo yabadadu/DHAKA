@@ -32,7 +32,7 @@ namespace Hmx.DHAKA.TCS
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnDesign = new DevExpress.XtraBars.BarButtonItem();
             this.srgThema = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
             this.btnWindowCascade = new DevExpress.XtraBars.BarButtonItem();
             this.btnWindowTileHorizontal = new DevExpress.XtraBars.BarButtonItem();
@@ -100,6 +100,7 @@ namespace Hmx.DHAKA.TCS
             this.backstageViewClientControl3 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
             this.bsvInfomation = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
             this.bsvManual = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
+            this.imgCollection = new DevExpress.Utils.ImageCollection(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.galleryDropDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl1)).BeginInit();
@@ -123,6 +124,7 @@ namespace Hmx.DHAKA.TCS
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgCollection)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl
@@ -130,7 +132,7 @@ namespace Hmx.DHAKA.TCS
             this.ribbonControl.ExpandCollapseItem.Id = 0;
             this.ribbonControl.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl.ExpandCollapseItem,
-            this.barButtonItem1,
+            this.btnDesign,
             this.srgThema,
             this.btnWindowCascade,
             this.btnWindowTileHorizontal,
@@ -150,12 +152,12 @@ namespace Hmx.DHAKA.TCS
             this.ribbonPage3});
             this.ribbonControl.Size = new System.Drawing.Size(1289, 147);
             // 
-            // barButtonItem1
+            // btnDesign
             // 
-            this.barButtonItem1.Caption = "코드관리";
-            this.barButtonItem1.Id = 1;
-            this.barButtonItem1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem1.ImageOptions.SvgImage")));
-            this.barButtonItem1.Name = "barButtonItem1";
+            this.btnDesign.Caption = "코드관리";
+            this.btnDesign.Id = 1;
+            this.btnDesign.ImageOptions.SvgImage = global::Hmx.DHAKA.TCS.Properties.Resources.changedatasourcepivottable;
+            this.btnDesign.Name = "btnDesign";
             // 
             // srgThema
             // 
@@ -199,7 +201,7 @@ namespace Hmx.DHAKA.TCS
             // 
             this.btnRegistrationAgent.Caption = "Registration Agent";
             this.btnRegistrationAgent.Id = 10;
-            this.btnRegistrationAgent.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnRegistrationAgent.ImageOptions.SvgImage")));
+            this.btnRegistrationAgent.ImageOptions.SvgImage = global::Hmx.DHAKA.TCS.Properties.Resources.newemployee;
             this.btnRegistrationAgent.Name = "btnRegistrationAgent";
             // 
             // barButtonGroup1
@@ -212,6 +214,8 @@ namespace Hmx.DHAKA.TCS
             // 
             this.barButtonItem3.Caption = "barButtonItem3";
             this.barButtonItem3.Id = 12;
+            this.barButtonItem3.ImageOptions.Image = global::Hmx.DHAKA.TCS.Properties.Resources.boperson_16x16;
+            this.barButtonItem3.ImageOptions.LargeImage = global::Hmx.DHAKA.TCS.Properties.Resources.boperson_32x32;
             this.barButtonItem3.Name = "barButtonItem3";
             // 
             // btnAgentList
@@ -226,11 +230,11 @@ namespace Hmx.DHAKA.TCS
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup1});
             this.ribbonPage1.Name = "ribbonPage1";
-            this.ribbonPage1.Text = "메뉴1";
+            this.ribbonPage1.Text = "Design";
             // 
             // ribbonPageGroup1
             // 
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem1);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnDesign);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             this.ribbonPageGroup1.Text = "Thema";
             // 
@@ -240,7 +244,7 @@ namespace Hmx.DHAKA.TCS
             this.ribbonPageGroup2,
             this.ribbonPageGroup6});
             this.ribbonPage2.Name = "ribbonPage2";
-            this.ribbonPage2.Text = "메뉴2";
+            this.ribbonPage2.Text = "Registration";
             // 
             // ribbonPageGroup2
             // 
@@ -759,9 +763,9 @@ namespace Hmx.DHAKA.TCS
             // 
             // backstageViewClientControl2
             // 
-            this.backstageViewClientControl2.Location = new System.Drawing.Point(132, 63);
+            this.backstageViewClientControl2.Location = new System.Drawing.Point(132, 62);
             this.backstageViewClientControl2.Name = "backstageViewClientControl2";
-            this.backstageViewClientControl2.Size = new System.Drawing.Size(670, 542);
+            this.backstageViewClientControl2.Size = new System.Drawing.Size(671, 544);
             this.backstageViewClientControl2.TabIndex = 2;
             // 
             // backstageViewClientControl3
@@ -785,6 +789,12 @@ namespace Hmx.DHAKA.TCS
             this.bsvManual.Caption = "메뉴얼";
             this.bsvManual.ContentControl = this.backstageViewClientControl3;
             this.bsvManual.Name = "bsvManual";
+            // 
+            // imgCollection
+            // 
+            this.imgCollection.ImageStream = ((DevExpress.Utils.ImageCollectionStreamer)(resources.GetObject("imgCollection.ImageStream")));
+            this.imgCollection.Images.SetKeyName(0, "RegistrationAgent.png");
+            this.imgCollection.Images.SetKeyName(1, "AgentList.png");
             // 
             // frmMain
             // 
@@ -825,6 +835,7 @@ namespace Hmx.DHAKA.TCS
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgCollection)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -833,7 +844,7 @@ namespace Hmx.DHAKA.TCS
         private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+        private DevExpress.XtraBars.BarButtonItem btnDesign;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
         private DevExpress.XtraBars.Ribbon.GalleryDropDown galleryDropDown1;
@@ -899,6 +910,7 @@ namespace Hmx.DHAKA.TCS
         private DevExpress.XtraBars.Ribbon.BackstageViewClientControl backstageViewClientControl3;
         private DevExpress.XtraBars.Ribbon.BackstageViewTabItem bsvManual;
         private DevExpress.XtraBars.BarButtonItem btnAgentList;
+        private DevExpress.Utils.ImageCollection imgCollection;
     }
 }
 

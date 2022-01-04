@@ -18,10 +18,12 @@ using CommonClass.Database.Mapper;
 using DevExpress.Xpf.Core;
 using DevExpress.XtraBars;
 using DevExpress.LookAndFeel;
-using HitopsCommon;
 using DevExpress.XtraSplashScreen;
 using Hitops.exception;
-using Hmx.Skit.SunkwangApp;
+using DevExpress.Utils.Svg;
+using CommonClass.Request;
+using Hitops;
+using HitopsCommon;
 
 namespace Hmx.DHAKA.TCS
 {
@@ -42,6 +44,9 @@ namespace Hmx.DHAKA.TCS
         #region EVENT AREA
         private void frmMain_Load(object sender, EventArgs e)
         {
+            // Set User Info
+            this.SetUserInfo();
+
             this.ribbonControl.ApplicationButtonDropDownControl = this.backstageViewControl1;
             this.backstageViewControl1.OwnerControl = this.ribbonControl;
 
@@ -51,13 +56,74 @@ namespace Hmx.DHAKA.TCS
             WindowsFormsSettings.MdiFormThickBorder = true;
             WindowsFormsSettings.ThickBorderWidth = 5;
 
-            UserLookAndFeel.Default.SetSkinStyle(RegistryFunc.getKey("Thema"));
+            UserLookAndFeel.Default.SetSkinStyle(RegistryFunc.GetKey("Thema"));
 
 
             this.AddEventHandler();
         }
         #endregion
         #region METHOD AREA
+        private void SetUserInfo()
+        {
+            //try
+            //{
+            //    Hashtable param = new Hashtable();
+            //    ArrayList userInfoList = BaseRequestHandler.Request(CommFunc.gloFrameworkServerName, "HITOPS3-ADM-USR-S-LSTLIVEUSER", _MID, param);
+            //    if (userInfoList.Count > 0)
+            //    {
+            //        var getUser = userInfoList.ToArray().Where(user => (string)((Hashtable)user)["USER_ID"] == CommFunc.gloUserID).ToList();
+
+            //        if (getUser.Count > 0)
+            //        {
+            //            Hashtable userInfo = getUser[0] as Hashtable;
+
+            //            string userId = (string)userInfo["USER_ID"];
+            //            string userName = (string)userInfo["USER_NM"];
+            //            string userGroupId = (string)userInfo["GROUP_ID"];
+            //            string userGroupName = (string)userInfo["GROUP_NM"];
+
+            //            this.lblUserId.Text = this.lblUserId.Text + CommFunc.gloUserID;
+            //            this.lblUserName.Text = this.lblUserName.Text + userName;
+            //            this.lblUserGroupId.Text = this.lblUserGroupId.Text + userGroupId;
+            //            this.lblUserGroupName.Text = this.lblUserGroupName.Text + userGroupName;
+
+            //            CommFunc.gloUserName = userName;
+            //        }
+            //    }
+
+            //    Hashtable hTable = new Hashtable();
+            //    hTable.Add("ID_USER", CommFunc.gloUserID);
+            //    ArrayList arrList = RequestHandler.Request(gloFrameworkServerName, "SKIT-ADM-USR-S-GETDOUZONEUSER", _MID, hTable);
+
+            //    if (arrList.Count > 0)
+            //    {
+            //        CommFunc.gloCompanyCode = (string)(arrList[0] as Hashtable)["CD_COMPANY"];
+            //        CommFunc.gloUserType = (string)(arrList[0] as Hashtable)["USR_GBN"];
+            //    }
+
+            //    // Set Defaul Info
+            //    CommFunc.gloDefaultCc = "121";         // CC Code
+            //    CommFunc.gloDefaultCcNm = "재무관리팀";  // CC Name
+
+            //    CommFunc.gloDefaultPu = "100";         // PU Code
+            //    CommFunc.gloDefaultPuNm = "공통(일반)";  // PU Name
+
+            //    CommFunc.gloDefaultSabun = CommFunc.gloUserID;
+            //    CommFunc.gloDefaultSabunNm = CommFunc.gloUserName;
+            //}
+            //catch (HMMException ex)
+            //{
+            //    CommFunc.ShowExceptionBox(ex);
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show(ex.Message);
+            //}
+            //finally
+            //{
+            //    Cursor.Current = Cursors.Default;  // Default Cursor
+            //}
+        }
         private void AddEventHandler()
         {
             #region Control
@@ -67,6 +133,7 @@ namespace Hmx.DHAKA.TCS
             #endregion
             #region Menu
             //Registration
+            this.btnDesign.ItemClick += new ItemClickEventHandler(this.RibbonBarButton_ItemClick); // Design
             this.btnRegistrationAgent.ItemClick += new ItemClickEventHandler(this.RibbonBarButton_ItemClick); // Registartin Agent
             this.btnAgentList.ItemClick += new ItemClickEventHandler(this.RibbonBarButton_ItemClick); // Agent List
             #endregion
@@ -93,8 +160,9 @@ namespace Hmx.DHAKA.TCS
                     MessageBox.Show("Authority Access Error");
                     return;
                 }
-
-                OpenForm("frm" + name);
+                //Get button image
+                Image img = (new SvgBitmap(buttonItem.ImageOptions.SvgImage)).Render(null, 1, 0);                
+                OpenForm("frm" + name, chgImageToIcon(img));
             }
             catch (HMMException ex)
             {
@@ -105,6 +173,14 @@ namespace Hmx.DHAKA.TCS
                 MessageBox.Show(ex.Message);
             }
         }
+        private Icon chgImageToIcon(Image img)
+        {
+            Bitmap bitmap = new Bitmap(img);
+            bitmap.SetResolution(64, 64);
+            Icon icon = System.Drawing.Icon.FromHandle(bitmap.GetHicon());
+            return icon;
+        }
+
         private static Form GetAssemblyForm(string formName)
         {
             Form form = null;
@@ -123,7 +199,7 @@ namespace Hmx.DHAKA.TCS
             return form;
         }
 
-        private void OpenForm(string formName)
+        private void OpenForm(string formName, Icon icon)
         {
             try
             {
@@ -133,6 +209,7 @@ namespace Hmx.DHAKA.TCS
                 // Open Form
                 Form selectedForm = GetAssemblyForm(formName);
 
+                if (icon != null) selectedForm.Icon = icon;
                 CommFunc.CheckLoadForm(selectedForm);
 
                 // Close Wait SplashScreen
@@ -151,7 +228,7 @@ namespace Hmx.DHAKA.TCS
                 Cursor.Current = Cursors.Default;
             }
         }
-
+       
         private void WindowAlignment_ItemClick(object sender, ItemClickEventArgs e)
         {
             BarButtonItem buttonItem = e.Item as BarButtonItem;
@@ -235,7 +312,7 @@ namespace Hmx.DHAKA.TCS
         }
         private void Thema_Click(object sender, GalleryItemClickEventArgs e)
         {
-            RegistryFunc.setKey("Thema", e.Item.Value.ToString());
+            RegistryFunc.SetKey("Thema", e.Item.Value.ToString());
         }
         #endregion
 

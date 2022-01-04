@@ -1,5 +1,6 @@
 ﻿#region
 using HitopsCommon;
+using HitopsCommon.Logger;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,17 +17,21 @@ namespace Hmx.DHAKA.TCS
         /// 해당 애플리케이션의 주 진입점입니다.
         /// </summary>
         [STAThread]
-        static void Main()
+        static void Main(String[] pArgs)
         {
+            BaseLogger.Info("App Initialized");
+
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+
+            if (!CommFunc.CheckLoginData(pArgs)) return;  //파라미터 체크
 
             CommFunc.frmMainForm = new frmMain();         //공용 함수에 MDI폼 지정
             CommFunc.AddStatusBar();
 
             Application.Run(CommFunc.frmMainForm);
 
-            //Application.EnableVisualStyles();
-            //Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new frmMain());
+            BaseLogger.Info("App Closed");
 
         }
     }

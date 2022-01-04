@@ -11,12 +11,12 @@ namespace Hmx.DHAKA.TCS.Common
     {
         public static string BasicPath = @"Software\DHAKA\TCS";
 
-        public static void setKey(string key, string value)
+        public static void SetKey(string key, string value)
         {
             RegistryKey regKey = Registry.CurrentUser.CreateSubKey(BasicPath, RegistryKeyPermissionCheck.ReadWriteSubTree);
             regKey.SetValue(key, value);
         }
-        public static string getKey(string key)
+        public static string GetKey(string key)
         {
             RegistryKey regKey = Registry.CurrentUser;
             regKey = regKey.OpenSubKey(BasicPath, true);

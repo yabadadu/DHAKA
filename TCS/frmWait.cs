@@ -3,7 +3,7 @@ using System;
 using DevExpress.XtraWaitForm;
 #endregion
 
-namespace Hmx.Skit.SunkwangApp
+namespace Hmx.DHAKA.TCS
 {
     public partial class frmWait : WaitForm
     {

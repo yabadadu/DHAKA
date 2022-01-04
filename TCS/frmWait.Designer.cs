@@ -1,4 +1,4 @@
-﻿namespace Hmx.Skit.SunkwangApp
+﻿namespace Hmx.DHAKA.TCS
 {
     partial class frmWait
     {

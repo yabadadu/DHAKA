@@ -22,7 +22,7 @@ namespace Hmx.DHAKA.TCS.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace Hmx.DHAKA.TCS.Properties {
         ///   이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Hmx.DHAKA.TCS.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace Hmx.DHAKA.TCS.Properties {
         ///   재정의합니다.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -61,9 +61,109 @@ namespace Hmx.DHAKA.TCS.Properties {
         }
         
         /// <summary>
+        ///   DevExpress.Utils.Svg.SvgImage 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        public static DevExpress.Utils.Svg.SvgImage actions_addcircled {
+            get {
+                object obj = ResourceManager.GetObject("actions_addcircled", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap exporttopdf_16x16 {
+        public static System.Drawing.Bitmap boperson_16x16 {
+            get {
+                object obj = ResourceManager.GetObject("boperson_16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        public static System.Drawing.Bitmap boperson_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("boperson_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        public static System.Drawing.Bitmap boresume_16x16 {
+            get {
+                object obj = ResourceManager.GetObject("boresume_16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        public static System.Drawing.Bitmap boresume_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("boresume_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   DevExpress.Utils.Svg.SvgImage 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        public static DevExpress.Utils.Svg.SvgImage categorize {
+            get {
+                object obj = ResourceManager.GetObject("categorize", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   DevExpress.Utils.Svg.SvgImage 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        public static DevExpress.Utils.Svg.SvgImage categorize1 {
+            get {
+                object obj = ResourceManager.GetObject("categorize1", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   DevExpress.Utils.Svg.SvgImage 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        public static DevExpress.Utils.Svg.SvgImage changedatasourcepivottable {
+            get {
+                object obj = ResourceManager.GetObject("changedatasourcepivottable", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   DevExpress.Utils.Svg.SvgImage 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        public static DevExpress.Utils.Svg.SvgImage convertto {
+            get {
+                object obj = ResourceManager.GetObject("convertto", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   DevExpress.Utils.Svg.SvgImage 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        public static DevExpress.Utils.Svg.SvgImage del {
+            get {
+                object obj = ResourceManager.GetObject("del", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        public static System.Drawing.Bitmap exporttopdf_16x16 {
             get {
                 object obj = ResourceManager.GetObject("exporttopdf_16x16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -73,7 +173,7 @@ namespace Hmx.DHAKA.TCS.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap exporttopdf_32x32 {
+        public static System.Drawing.Bitmap exporttopdf_32x32 {
             get {
                 object obj = ResourceManager.GetObject("exporttopdf_32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -83,7 +183,7 @@ namespace Hmx.DHAKA.TCS.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap exporttoxls_16x16 {
+        public static System.Drawing.Bitmap exporttoxls_16x16 {
             get {
                 object obj = ResourceManager.GetObject("exporttoxls_16x16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -93,10 +193,20 @@ namespace Hmx.DHAKA.TCS.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap exporttoxls_32x32 {
+        public static System.Drawing.Bitmap exporttoxls_32x32 {
             get {
                 object obj = ResourceManager.GetObject("exporttoxls_32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   DevExpress.Utils.Svg.SvgImage 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        public static DevExpress.Utils.Svg.SvgImage newemployee {
+            get {
+                object obj = ResourceManager.GetObject("newemployee", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
             }
         }
     }

@@ -12,7 +12,7 @@ namespace HitopsCommon.Logger
     {
         #region FIELD & CONST AREA *********************
         private static ILog _logger = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
-        private static string _prefix = "[SKAPP]";
+        private static string _prefix = "[DHAKA]";
         #endregion
 
         #region METHOD AREA ****************************

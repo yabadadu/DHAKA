@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HitopsCommon;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Hmx.DHAKA.TCS.Environment.Item
 {
-    public class ThemaItem
+    public class ThemaItem : BaseItem
     {
         #region FIELD AREA
         #endregion

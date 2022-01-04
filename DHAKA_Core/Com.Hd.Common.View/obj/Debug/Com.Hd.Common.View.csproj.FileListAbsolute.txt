@@ -1,5 +1,3 @@
-C:\Users\hmx200171\Documents\다카공항\DHAKA\DHAKA_Core\Com.Hd.Common.View\obj\Debug\Com.Hd.Common.View.csproj.AssemblyReference.cache
-C:\Users\hmx200171\Documents\다카공항\DHAKA\DHAKA_Core\Com.Hd.Common.View\obj\Debug\Com.Hd.Common.View.csproj.GenerateResource.cache
 C:\Users\hmx200171\Documents\다카공항\DHAKA\DHAKA_Core\Com.Hd.Common.View\bin\Debug\Com.Hd.Common.View.dll
 C:\Users\hmx200171\Documents\다카공항\DHAKA\DHAKA_Core\Com.Hd.Common.View\bin\Debug\Com.Hd.Common.View.pdb
 C:\Users\hmx200171\Documents\다카공항\DHAKA\DHAKA_Core\Com.Hd.Common.View\bin\Debug\DevExpress.Data.v18.2.dll
@@ -44,7 +42,9 @@ C:\Users\hmx200171\Documents\다카공항\DHAKA\DHAKA_Core\Com.Hd.Common.View\bi
 C:\Users\hmx200171\Documents\다카공항\DHAKA\DHAKA_Core\Com.Hd.Common.View\bin\Debug\es\DevExpress.Sparkline.v18.2.Core.resources.dll
 C:\Users\hmx200171\Documents\다카공항\DHAKA\DHAKA_Core\Com.Hd.Common.View\bin\Debug\ja\DevExpress.Sparkline.v18.2.Core.resources.dll
 C:\Users\hmx200171\Documents\다카공항\DHAKA\DHAKA_Core\Com.Hd.Common.View\bin\Debug\ru\DevExpress.Sparkline.v18.2.Core.resources.dll
+C:\Users\hmx200171\Documents\다카공항\DHAKA\DHAKA_Core\Com.Hd.Common.View\obj\Debug\Com.Hd.Common.View.csproj.AssemblyReference.cache
 C:\Users\hmx200171\Documents\다카공항\DHAKA\DHAKA_Core\Com.Hd.Common.View\obj\Debug\Com.Hd.Common.View.Properties.Resources.resources
+C:\Users\hmx200171\Documents\다카공항\DHAKA\DHAKA_Core\Com.Hd.Common.View\obj\Debug\Com.Hd.Common.View.csproj.GenerateResource.cache
 C:\Users\hmx200171\Documents\다카공항\DHAKA\DHAKA_Core\Com.Hd.Common.View\obj\Debug\Com.Hd.Common.View.dll.licenses
 C:\Users\hmx200171\Documents\다카공항\DHAKA\DHAKA_Core\Com.Hd.Common.View\obj\Debug\Com.Hd.Common.View.csproj.CoreCompileInputs.cache
 C:\Users\hmx200171\Documents\다카공항\DHAKA\DHAKA_Core\Com.Hd.Common.View\obj\Debug\Com.Hd.Common.View.csproj.CopyComplete

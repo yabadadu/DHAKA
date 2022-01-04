@@ -6,7 +6,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CommonClass.Database.Mapper;
-using HitopsCommon;
 using Hmx.DHAKA.TCS.Environment.Item;
 
 namespace Hmx.DHAKA.TCS.Environment.Service
@@ -28,7 +27,7 @@ namespace Hmx.DHAKA.TCS.Environment.Service
             {
                 Hashtable parameters = BindDB2Class.BindDBClass2Hashtable("", false);
                 //dataTable = CommFunc.RequestHandlerDataTable("", null, parameters);
-                dataTable = (new TempThema()).getData();
+                dataTable = (new TempData()).GetData();
 
                 if (dataTable != null && dataTable.Rows.Count > 0)
                 {
@@ -42,13 +41,13 @@ namespace Hmx.DHAKA.TCS.Environment.Service
 
             return resultItems;
         }
+        #endregion
     }
-    #endregion
 
 
-    class TempThema
+    class TempData
     {
-        public DataTable getData()
+        public DataTable GetData()
         {
             DataTable dt = new DataTable();
             dt.Columns.Add(new DataColumn("KEY", typeof(string)));
