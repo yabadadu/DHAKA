@@ -134,6 +134,7 @@ namespace Hmx.DHAKA.TCS
             #region Menu
             //Registration
             this.btnDesign.ItemClick += new ItemClickEventHandler(this.RibbonBarButton_ItemClick); // Design
+            this.btnMonitoring.ItemClick += new ItemClickEventHandler(this.RibbonBarButton_ItemClick); // Monitoring
             this.btnRegistrationAgent.ItemClick += new ItemClickEventHandler(this.RibbonBarButton_ItemClick); // Registartin Agent
             this.btnAgentList.ItemClick += new ItemClickEventHandler(this.RibbonBarButton_ItemClick); // Agent List
             #endregion
@@ -196,9 +197,24 @@ namespace Hmx.DHAKA.TCS
                 }
             }
 
+            if (form == null) form = FormCron(formName);
+
             return form;
         }
 
+        private static Form FormCron(string formName)
+        {
+            Form tmpForm = null;
+            switch (formName)
+            {
+                case "frmMonitoring":                    
+                    tmpForm = new TruckDock.frmDesign();
+                    tmpForm.Tag = "CRON";
+                    tmpForm.Name = "frmMonitoring";
+                    break;
+            }
+            return tmpForm;            
+        }
         private void OpenForm(string formName, Icon icon)
         {
             try

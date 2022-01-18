@@ -23,12 +23,12 @@ namespace Hmx.DHAKA.TCS.TruckDock.Item
         public string TD_Name { get; set; }        
         public string TD_ForeColor { get; set; }
         public string TD_BackColor { get; set; }
-
+        public IList<WareHouseDesignItem> TD_List { get; set; }
         public Color WH_ForeColor2
         {
             get
             {
-                Color cl = System.Drawing.ColorTranslator.FromHtml(this.WH_ForeColor);
+                Color cl = ColorTranslator.FromHtml(this.WH_ForeColor);
                 return cl;
             }
         }
@@ -36,7 +36,7 @@ namespace Hmx.DHAKA.TCS.TruckDock.Item
         {
             get
             {
-                Color cl = System.Drawing.ColorTranslator.FromHtml(this.WH_BackColor);
+                Color cl = ColorTranslator.FromHtml(this.WH_BackColor);
                 return cl;
             }
         }
@@ -60,7 +60,7 @@ namespace Hmx.DHAKA.TCS.TruckDock.Item
         {
             get
             {
-                Color cl = System.Drawing.ColorTranslator.FromHtml(this.TD_ForeColor);
+                Color cl = ColorTranslator.FromHtml(this.TD_ForeColor);
                 return cl;
             }
         }
@@ -68,7 +68,7 @@ namespace Hmx.DHAKA.TCS.TruckDock.Item
         {
             get
             {
-                Color cl = System.Drawing.ColorTranslator.FromHtml(this.TD_BackColor);
+                Color cl = ColorTranslator.FromHtml(this.TD_BackColor);
                 return cl;
             }
         }
@@ -80,6 +80,7 @@ namespace Hmx.DHAKA.TCS.TruckDock.Item
         #region FIELD AREA 
         private IList<WareHouseDesignItem> _wh_Design;
         private IList<WareHouseListItem> _wh_List;
+
         #endregion
         #region PROPERTY AREA 
         public IList<WareHouseDesignItem> WH_Design
@@ -102,11 +103,13 @@ namespace Hmx.DHAKA.TCS.TruckDock.Item
 
             string tmpWH_Name = "";
             WareHouseListItem WH_Item = new WareHouseListItem();
+            WareHouseDesignItem TD_Item;
             foreach (WareHouseDesignItem item in this.WH_Design)
             {
                 if (!item.WH_Name.Equals(tmpWH_Name))
                 {
                     WH_Item = new WareHouseListItem();
+                    WH_Item.TD_List = new List<WareHouseDesignItem>();
                     WH_Item.WH_Name = item.WH_Name;
                     WH_Item.WH_Desc = item.WH_Desc;
                     WH_Item.WH_ForeColor = item.WH_ForeColor;
@@ -114,10 +117,18 @@ namespace Hmx.DHAKA.TCS.TruckDock.Item
                     WH_Item.WH_POS_X = item.WH_POS_X;
                     WH_Item.WH_POS_Y = item.WH_POS_Y;
                     WH_Item.WH_DIRECTION = item.WH_DIRECTION;
+
                     this._wh_List.Add(WH_Item);
 
                     tmpWH_Name = WH_Item.WH_Name;
                 }
+
+                TD_Item = new WareHouseDesignItem();
+                TD_Item.TD_Name = item.TD_Name;
+                TD_Item.TD_ForeColor = item.TD_ForeColor;
+                TD_Item.TD_BackColor = item.TD_BackColor;
+                
+                WH_Item.TD_List.Add(TD_Item);
             }
         }
         public IList<WareHouseListItem> WH_List
@@ -128,52 +139,5 @@ namespace Hmx.DHAKA.TCS.TruckDock.Item
             }
         }
         #endregion
-    }
-
-    public class TruckDockListItem : WareHouseListItem
-    {
-        #region FIELD AREA         
-        private IList<TruckDockListItem> _td_List;
-        private string _compWH_Name = "";
-        #endregion
-        #region PROPERTY AREA 
-        public string CompWH_Name
-        {
-            get
-            {
-                return this._compWH_Name;
-            }
-            set
-            {
-                this._compWH_Name = value;
-                this.makeTD_List();
-            }
-        }
-        private void makeTD_List()
-        {
-            if (this._td_List == null) this._td_List = new List<TruckDockListItem>();
-            this._td_List.Clear();
-
-            TruckDockListItem TD_Item = new TruckDockListItem();
-            foreach (WareHouseDesignItem item in this.WH_Design)
-            {
-                if (item.WH_Name.Equals(this.CompWH_Name))
-                {
-                    TD_Item = new TruckDockListItem();
-                    TD_Item.TD_Name = item.TD_Name;
-                    TD_Item.TD_ForeColor = item.TD_ForeColor;
-                    TD_Item.TD_BackColor = item.TD_BackColor;
-                    this._td_List.Add(TD_Item);
-                }
-            }
-        }
-        public IList<TruckDockListItem> TD_List
-        {
-            get
-            {
-                return this._td_List;
-            }
-        }
-        #endregion        
     }
 }

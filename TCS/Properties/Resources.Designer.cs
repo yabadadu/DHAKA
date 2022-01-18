@@ -71,6 +71,56 @@ namespace Hmx.DHAKA.TCS.Properties {
         }
         
         /// <summary>
+        ///   DevExpress.Utils.Svg.SvgImage 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        public static DevExpress.Utils.Svg.SvgImage addcolumn {
+            get {
+                object obj = ResourceManager.GetObject("addcolumn", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   DevExpress.Utils.Svg.SvgImage 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        public static DevExpress.Utils.Svg.SvgImage alignmentbottomcenter {
+            get {
+                object obj = ResourceManager.GetObject("alignmentbottomcenter", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   DevExpress.Utils.Svg.SvgImage 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        public static DevExpress.Utils.Svg.SvgImage alignmentcenterleft {
+            get {
+                object obj = ResourceManager.GetObject("alignmentcenterleft", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   DevExpress.Utils.Svg.SvgImage 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        public static DevExpress.Utils.Svg.SvgImage alignmentcenterright {
+            get {
+                object obj = ResourceManager.GetObject("alignmentcenterright", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   DevExpress.Utils.Svg.SvgImage 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        public static DevExpress.Utils.Svg.SvgImage alignmenttopcenter {
+            get {
+                object obj = ResourceManager.GetObject("alignmenttopcenter", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
         public static System.Drawing.Bitmap boperson_16x16 {
@@ -161,6 +211,16 @@ namespace Hmx.DHAKA.TCS.Properties {
         }
         
         /// <summary>
+        ///   DevExpress.Utils.Svg.SvgImage 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        public static DevExpress.Utils.Svg.SvgImage electronics_desktopmac {
+            get {
+                object obj = ResourceManager.GetObject("electronics_desktopmac", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
         public static System.Drawing.Bitmap exporttopdf_16x16 {
@@ -197,6 +257,56 @@ namespace Hmx.DHAKA.TCS.Properties {
             get {
                 object obj = ResourceManager.GetObject("exporttoxls_32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   DevExpress.Utils.Svg.SvgImage 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        public static DevExpress.Utils.Svg.SvgImage inserttablecolumnstotheleft {
+            get {
+                object obj = ResourceManager.GetObject("inserttablecolumnstotheleft", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   DevExpress.Utils.Svg.SvgImage 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        public static DevExpress.Utils.Svg.SvgImage inserttablecolumnstotheleft1 {
+            get {
+                object obj = ResourceManager.GetObject("inserttablecolumnstotheleft1", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   DevExpress.Utils.Svg.SvgImage 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        public static DevExpress.Utils.Svg.SvgImage inserttablecolumnstotheright {
+            get {
+                object obj = ResourceManager.GetObject("inserttablecolumnstotheright", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   DevExpress.Utils.Svg.SvgImage 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        public static DevExpress.Utils.Svg.SvgImage inserttablerowsabove {
+            get {
+                object obj = ResourceManager.GetObject("inserttablerowsabove", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   DevExpress.Utils.Svg.SvgImage 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        public static DevExpress.Utils.Svg.SvgImage inserttablerowsbelow {
+            get {
+                object obj = ResourceManager.GetObject("inserttablerowsbelow", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
             }
         }
         

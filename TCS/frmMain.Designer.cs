@@ -42,6 +42,7 @@ namespace Hmx.DHAKA.TCS
             this.barButtonGroup1 = new DevExpress.XtraBars.BarButtonGroup();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             this.btnAgentList = new DevExpress.XtraBars.BarButtonItem();
+            this.btnMonitoring = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -141,9 +142,10 @@ namespace Hmx.DHAKA.TCS
             this.btnRegistrationAgent,
             this.barButtonGroup1,
             this.barButtonItem3,
-            this.btnAgentList});
+            this.btnAgentList,
+            this.btnMonitoring});
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl.MaxItemId = 14;
+            this.ribbonControl.MaxItemId = 15;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
@@ -154,7 +156,7 @@ namespace Hmx.DHAKA.TCS
             // 
             // btnDesign
             // 
-            this.btnDesign.Caption = "코드관리";
+            this.btnDesign.Caption = "Design of Truck Dock ";
             this.btnDesign.Id = 1;
             this.btnDesign.ImageOptions.SvgImage = global::Hmx.DHAKA.TCS.Properties.Resources.changedatasourcepivottable;
             this.btnDesign.Name = "btnDesign";
@@ -225,6 +227,13 @@ namespace Hmx.DHAKA.TCS
             this.btnAgentList.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnAgentList.ImageOptions.SvgImage")));
             this.btnAgentList.Name = "btnAgentList";
             // 
+            // btnMonitoring
+            // 
+            this.btnMonitoring.Caption = "Monitoring of Truck Dock";
+            this.btnMonitoring.Id = 14;
+            this.btnMonitoring.ImageOptions.SvgImage = global::Hmx.DHAKA.TCS.Properties.Resources.electronics_desktopmac;
+            this.btnMonitoring.Name = "btnMonitoring";
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -235,8 +244,9 @@ namespace Hmx.DHAKA.TCS
             // ribbonPageGroup1
             // 
             this.ribbonPageGroup1.ItemLinks.Add(this.btnDesign);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnMonitoring);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.Text = "Thema";
+            this.ribbonPageGroup1.Text = "Truck Dock";
             // 
             // ribbonPage2
             // 
@@ -763,9 +773,9 @@ namespace Hmx.DHAKA.TCS
             // 
             // backstageViewClientControl2
             // 
-            this.backstageViewClientControl2.Location = new System.Drawing.Point(132, 62);
+            this.backstageViewClientControl2.Location = new System.Drawing.Point(132, 63);
             this.backstageViewClientControl2.Name = "backstageViewClientControl2";
-            this.backstageViewClientControl2.Size = new System.Drawing.Size(671, 544);
+            this.backstageViewClientControl2.Size = new System.Drawing.Size(670, 542);
             this.backstageViewClientControl2.TabIndex = 2;
             // 
             // backstageViewClientControl3
@@ -911,6 +921,7 @@ namespace Hmx.DHAKA.TCS
         private DevExpress.XtraBars.Ribbon.BackstageViewTabItem bsvManual;
         private DevExpress.XtraBars.BarButtonItem btnAgentList;
         private DevExpress.Utils.ImageCollection imgCollection;
+        private DevExpress.XtraBars.BarButtonItem btnMonitoring;
     }
 }
 

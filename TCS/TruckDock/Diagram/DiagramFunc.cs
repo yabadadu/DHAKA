@@ -60,21 +60,26 @@ namespace Hmx.DHAKA.TCS.TruckDock.Diagram
         }
         #endregion
         #region METHOD AREA
-        public void InitDiagramControl(DiagramControl diagControl)
+        public void InitDiagramControl(DiagramControl diagControl, float editWidth, float editHeight)
         {
             _diagControl = diagControl;
-            this.SetDiagramControl();
+            this.SetDiagramControl(editWidth - 100 , editHeight - 100);
             this.AddEvent();
         }
-        private void SetDiagramControl()
+        private void SetDiagramControl(float editWidth, float editHeight)
         {
-            this.DiagControl.OptionsView.CanvasSizeMode = CanvasSizeMode.Fill;
-            this.DiagControl.OptionsView.PaperKind = PaperKind.A4;
+            this.DiagControl.OptionsView.CanvasSizeMode = CanvasSizeMode.None;
+            //this.DiagControl.OptionsView.PaperKind = PaperKind.A4;
             this.DiagControl.OptionsView.Landscape = true;
             this.DiagControl.OptionsView.ScrollMargin = new Padding(int.MaxValue);
+            this.DiagControl.OptionsView.ShowGrid = true;
+            this.DiagControl.OptionsView.ShowRulers = false;
+
             //this.DiagControl.OptionsProtection.AllowZoom = false;
 
-            this.DiagControl.OptionsView.CanvasSizeMode = CanvasSizeMode.None;
+            this.DiagControl.OptionsView.PageSize = new SizeF(editWidth, editHeight);
+            this.DiagControl.OptionsView.PaperKind = PaperKind.Custom;
+            this.DiagControl.FitToDrawing();
             this.DiagControl.OptionsBehavior.EnableProportionalResizing = false;
             this.DiagControl.AutoSizeInLayoutControl = false;
         }
@@ -252,7 +257,7 @@ namespace Hmx.DHAKA.TCS.TruckDock.Diagram
         }
         public void LoadDocument(string XML)
         {
-            this.SetDiagramControl();
+            //this.SetDiagramControl();
             this.DiagControl.LoadDocument(this.ChangeStringToStream(XML));
             this.AfterLooading();
         }

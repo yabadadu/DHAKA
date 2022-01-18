@@ -1,0 +1,8 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<svg x="0px" y="0px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 32 32" xml:space="preserve" id="InsertTableColumnsToTheLeft">
+  <g opacity="0.5" class="st0">
+    <path d="M10,10H2V4h8V10z M30,4h-8v6h8V4z M30,12h-8v6h8V12z M30,20h-8v6h8V20z M10,20H2v6h8V20z" fill="#727272" opacity="0.5" class="Black" />
+  </g>
+  <path d="M6,13h4v4H6v2l-4-4l4-4V13z" fill="#1177D7" class="Blue" />
+  <rect x="12" y="4" width="8" height="22" rx="0" ry="0" fill="#FFB115" class="Yellow" />
+</svg>

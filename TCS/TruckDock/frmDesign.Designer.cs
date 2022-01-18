@@ -48,34 +48,33 @@ namespace Hmx.DHAKA.TCS.TruckDock
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
-            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnDeleteTruckDock = new DevExpress.XtraBars.BarButtonItem();
+            this.btnAddTruckDock = new DevExpress.XtraBars.BarButtonItem();
             this.btnBackColor = new DevExpress.XtraBars.BarEditItem();
             this.repositoryItemColorEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemColorEdit();
             this.btnForeColor = new DevExpress.XtraBars.BarEditItem();
             this.repositoryItemColorEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemColorEdit();
             this.btnDirection = new DevExpress.XtraBars.BarSubItem();
-            this.chkBottom = new DevExpress.XtraBars.BarCheckItem();
-            this.chkTop = new DevExpress.XtraBars.BarCheckItem();
-            this.chkLeft = new DevExpress.XtraBars.BarCheckItem();
-            this.chkRight = new DevExpress.XtraBars.BarCheckItem();
+            this.btnBottom = new DevExpress.XtraBars.BarCheckItem();
+            this.btnTop = new DevExpress.XtraBars.BarCheckItem();
+            this.btnLeft = new DevExpress.XtraBars.BarCheckItem();
+            this.btnRight = new DevExpress.XtraBars.BarCheckItem();
+            this.btnAddWareHouse = new DevExpress.XtraBars.BarButtonItem();
             this.repositoryItemTextEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.diagramControl1 = new DevExpress.XtraDiagram.DiagramControl();
-            this.gridControl = new DevExpress.XtraGrid.GridControl();
-            this.gridView = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.popupMenuItem = new DevExpress.XtraBars.PopupMenu(this.components);
             this.popupMenuContainer = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.popupMenuAddContainer = new DevExpress.XtraBars.PopupMenu(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.bmgToolBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemColorEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemColorEdit2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.diagramControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenuItem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenuContainer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenuAddContainer)).BeginInit();
             this.SuspendLayout();
             // 
             // bmgToolBar
@@ -99,17 +98,18 @@ namespace Hmx.DHAKA.TCS.TruckDock
             this.btnImport,
             this.btnCheck,
             this.btnUncheck,
-            this.barButtonItem1,
-            this.barButtonItem2,
+            this.btnDeleteTruckDock,
+            this.btnAddTruckDock,
             this.btnBackColor,
             this.btnForeColor,
             this.btnDirection,
-            this.chkBottom,
-            this.chkTop,
-            this.chkLeft,
-            this.chkRight});
+            this.btnBottom,
+            this.btnTop,
+            this.btnLeft,
+            this.btnRight,
+            this.btnAddWareHouse});
             this.bmgToolBar.MainMenu = this.bar2;
-            this.bmgToolBar.MaxItemId = 23;
+            this.bmgToolBar.MaxItemId = 24;
             this.bmgToolBar.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemColorEdit1,
             this.repositoryItemColorEdit2,
@@ -274,19 +274,19 @@ namespace Hmx.DHAKA.TCS.TruckDock
             this.barDockControlRight.Manager = this.bmgToolBar;
             this.barDockControlRight.Size = new System.Drawing.Size(0, 799);
             // 
-            // barButtonItem1
+            // btnDeleteTruckDock
             // 
-            this.barButtonItem1.Caption = "Delete Truck Dock";
-            this.barButtonItem1.Id = 11;
-            this.barButtonItem1.ImageOptions.SvgImage = global::Hmx.DHAKA.TCS.Properties.Resources.del;
-            this.barButtonItem1.Name = "barButtonItem1";
+            this.btnDeleteTruckDock.Caption = "Delete Truck Dock";
+            this.btnDeleteTruckDock.Id = 11;
+            this.btnDeleteTruckDock.ImageOptions.SvgImage = global::Hmx.DHAKA.TCS.Properties.Resources.del;
+            this.btnDeleteTruckDock.Name = "btnDeleteTruckDock";
             // 
-            // barButtonItem2
+            // btnAddTruckDock
             // 
-            this.barButtonItem2.Caption = "Add Truck Dock";
-            this.barButtonItem2.Id = 12;
-            this.barButtonItem2.ImageOptions.SvgImage = global::Hmx.DHAKA.TCS.Properties.Resources.actions_addcircled;
-            this.barButtonItem2.Name = "barButtonItem2";
+            this.btnAddTruckDock.Caption = "Add Truck Dock";
+            this.btnAddTruckDock.Id = 12;
+            this.btnAddTruckDock.ImageOptions.SvgImage = global::Hmx.DHAKA.TCS.Properties.Resources.actions_addcircled;
+            this.btnAddTruckDock.Name = "btnAddTruckDock";
             // 
             // btnBackColor
             // 
@@ -320,39 +320,50 @@ namespace Hmx.DHAKA.TCS.TruckDock
             // 
             // btnDirection
             // 
-            this.btnDirection.Caption = "Direction";
+            this.btnDirection.Caption = "Direction of Truck-Dock";
             this.btnDirection.Id = 16;
             this.btnDirection.ImageOptions.SvgImage = global::Hmx.DHAKA.TCS.Properties.Resources.convertto;
             this.btnDirection.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.chkBottom),
-            new DevExpress.XtraBars.LinkPersistInfo(this.chkTop),
-            new DevExpress.XtraBars.LinkPersistInfo(this.chkLeft),
-            new DevExpress.XtraBars.LinkPersistInfo(this.chkRight)});
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnBottom),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnTop),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnLeft),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnRight)});
             this.btnDirection.Name = "btnDirection";
             // 
-            // chkBottom
+            // btnBottom
             // 
-            this.chkBottom.Caption = "Bottom";
-            this.chkBottom.Id = 17;
-            this.chkBottom.Name = "chkBottom";
+            this.btnBottom.Caption = "Bottom";
+            this.btnBottom.Id = 17;
+            this.btnBottom.ImageOptions.SvgImage = global::Hmx.DHAKA.TCS.Properties.Resources.alignmentbottomcenter;
+            this.btnBottom.Name = "btnBottom";
             // 
-            // chkTop
+            // btnTop
             // 
-            this.chkTop.Caption = "TOP";
-            this.chkTop.Id = 18;
-            this.chkTop.Name = "chkTop";
+            this.btnTop.Caption = "Top";
+            this.btnTop.Id = 18;
+            this.btnTop.ImageOptions.SvgImage = global::Hmx.DHAKA.TCS.Properties.Resources.alignmenttopcenter;
+            this.btnTop.Name = "btnTop";
             // 
-            // chkLeft
+            // btnLeft
             // 
-            this.chkLeft.Caption = "Left";
-            this.chkLeft.Id = 19;
-            this.chkLeft.Name = "chkLeft";
+            this.btnLeft.Caption = "Left";
+            this.btnLeft.Id = 19;
+            this.btnLeft.ImageOptions.SvgImage = global::Hmx.DHAKA.TCS.Properties.Resources.alignmentcenterleft;
+            this.btnLeft.Name = "btnLeft";
             // 
-            // chkRight
+            // btnRight
             // 
-            this.chkRight.Caption = "Right";
-            this.chkRight.Id = 20;
-            this.chkRight.Name = "chkRight";
+            this.btnRight.Caption = "Right";
+            this.btnRight.Id = 20;
+            this.btnRight.ImageOptions.SvgImage = global::Hmx.DHAKA.TCS.Properties.Resources.alignmentcenterright;
+            this.btnRight.Name = "btnRight";
+            // 
+            // btnAddWareHouse
+            // 
+            this.btnAddWareHouse.Caption = "Add WareHouse";
+            this.btnAddWareHouse.Id = 23;
+            this.btnAddWareHouse.ImageOptions.SvgImage = global::Hmx.DHAKA.TCS.Properties.Resources.addcolumn;
+            this.btnAddWareHouse.Name = "btnAddWareHouse";
             // 
             // repositoryItemTextEdit1
             // 
@@ -361,17 +372,17 @@ namespace Hmx.DHAKA.TCS.TruckDock
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 81.37327F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.62674F));
             this.tableLayoutPanel1.Controls.Add(this.diagramControl1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.gridControl, 1, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(30, 58);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 24);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1369, 588);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1560, 799);
             this.tableLayoutPanel1.TabIndex = 4;
             // 
             // diagramControl1
@@ -383,30 +394,15 @@ namespace Hmx.DHAKA.TCS.TruckDock
             "BasicShapes",
             "BasicFlowchartShapes"});
             this.diagramControl1.OptionsView.PaperKind = System.Drawing.Printing.PaperKind.Letter;
-            this.diagramControl1.Size = new System.Drawing.Size(1107, 582);
+            this.diagramControl1.Size = new System.Drawing.Size(1554, 793);
             this.diagramControl1.TabIndex = 0;
             this.diagramControl1.Text = "diagramControl1";
-            // 
-            // gridControl
-            // 
-            this.gridControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl.Location = new System.Drawing.Point(1116, 3);
-            this.gridControl.MainView = this.gridView;
-            this.gridControl.Name = "gridControl";
-            this.gridControl.Size = new System.Drawing.Size(250, 582);
-            this.gridControl.TabIndex = 29;
-            this.gridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView});
-            // 
-            // gridView
-            // 
-            this.gridView.GridControl = this.gridControl;
-            this.gridView.Name = "gridView";
             // 
             // popupMenuItem
             // 
             this.popupMenuItem.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnAddTruckDock),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnDeleteTruckDock),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnBackColor, true),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnForeColor)});
             this.popupMenuItem.Manager = this.bmgToolBar;
@@ -415,12 +411,19 @@ namespace Hmx.DHAKA.TCS.TruckDock
             // popupMenuContainer
             // 
             this.popupMenuContainer.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem2),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnAddTruckDock),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnBackColor),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnForeColor),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnDirection)});
             this.popupMenuContainer.Manager = this.bmgToolBar;
             this.popupMenuContainer.Name = "popupMenuContainer";
+            // 
+            // popupMenuAddContainer
+            // 
+            this.popupMenuAddContainer.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnAddWareHouse)});
+            this.popupMenuAddContainer.Manager = this.bmgToolBar;
+            this.popupMenuAddContainer.Name = "popupMenuAddContainer";
             // 
             // frmDesign
             // 
@@ -440,10 +443,9 @@ namespace Hmx.DHAKA.TCS.TruckDock
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.diagramControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenuItem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenuContainer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenuAddContainer)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -470,21 +472,21 @@ namespace Hmx.DHAKA.TCS.TruckDock
         private DevExpress.XtraBars.BarDockControl barDockControlRight;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private DevExpress.XtraDiagram.DiagramControl diagramControl1;
-        private DevExpress.XtraGrid.GridControl gridControl;
-        public DevExpress.XtraGrid.Views.Grid.GridView gridView;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+        private DevExpress.XtraBars.BarButtonItem btnDeleteTruckDock;
         private DevExpress.XtraBars.PopupMenu popupMenuItem;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
+        private DevExpress.XtraBars.BarButtonItem btnAddTruckDock;
         private DevExpress.XtraBars.PopupMenu popupMenuContainer;
         private DevExpress.XtraBars.BarEditItem btnBackColor;
         private DevExpress.XtraEditors.Repository.RepositoryItemColorEdit repositoryItemColorEdit1;
         private DevExpress.XtraBars.BarEditItem btnForeColor;
         private DevExpress.XtraEditors.Repository.RepositoryItemColorEdit repositoryItemColorEdit2;
         private DevExpress.XtraBars.BarSubItem btnDirection;
-        private DevExpress.XtraBars.BarCheckItem chkBottom;
-        private DevExpress.XtraBars.BarCheckItem chkTop;
-        private DevExpress.XtraBars.BarCheckItem chkLeft;
-        private DevExpress.XtraBars.BarCheckItem chkRight;
+        private DevExpress.XtraBars.BarCheckItem btnBottom;
+        private DevExpress.XtraBars.BarCheckItem btnTop;
+        private DevExpress.XtraBars.BarCheckItem btnLeft;
+        private DevExpress.XtraBars.BarCheckItem btnRight;
         private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit repositoryItemTextEdit1;
+        private DevExpress.XtraBars.BarButtonItem btnAddWareHouse;
+        private DevExpress.XtraBars.PopupMenu popupMenuAddContainer;
     }
 }

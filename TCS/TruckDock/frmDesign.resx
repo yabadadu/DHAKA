@@ -312,9 +312,12 @@
 </value>
   </data>
   <metadata name="popupMenuItem.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>137, 17</value>
+    <value>302, 13</value>
   </metadata>
   <metadata name="popupMenuContainer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>271, 19</value>
+    <value>137, 12</value>
+  </metadata>
+  <metadata name="popupMenuAddContainer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>448, 13</value>
   </metadata>
 </root>

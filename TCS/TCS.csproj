@@ -245,5 +245,38 @@
   <ItemGroup>
     <None Include="Resources\convertto.svg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inserttablerowsabove.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inserttablecolumnstotheleft.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inserttablecolumnstotheright.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inserttablecolumnstotheleft1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inserttablerowsbelow.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alignmentbottomcenter.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alignmentcenterleft.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alignmentcenterright.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alignmenttopcenter.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addcolumn.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\electronics_desktopmac.svg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

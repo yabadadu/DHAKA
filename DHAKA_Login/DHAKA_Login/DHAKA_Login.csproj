@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8772F648-ACC2-4A41-8E3C-AB5EF4BDEC8F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Hitops3Login</RootNamespace>
+    <AssemblyName>DHAKA_Login</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v18.2, Version=18.2.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v18.2.Core, Version=18.2.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v18.2.Core, Version=18.2.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v18.2, Version=18.2.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v18.2, Version=18.2.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v18.2, Version=18.2.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v18.2, Version=18.2.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v18.2, Version=18.2.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmChgPwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChgPwd.designer.cs">
+      <DependentUpon>frmChgPwd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEnvironment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEnvironment.Designer.cs">
+      <DependentUpon>frmEnvironment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHitops3Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHitops3Login.Designer.cs">
+      <DependentUpon>frmHitops3Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IniFileTool.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmChgPwd.resx">
+      <DependentUpon>frmChgPwd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEnvironment.resx">
+      <DependentUpon>frmEnvironment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHitops3Login.resx">
+      <DependentUpon>frmHitops3Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\SK_IT_ComLib\Hitops_L\SmartThreadPool\SmartThreadPool_L.csproj">
+      <Project>{8684fc56-a679-4e2e-8f96-e172fb062eb6}</Project>
+      <Name>SmartThreadPool_L</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DHAKA_ComLib\Hitops3Updater_L\Hitops3Updater_L.csproj">
+      <Project>{0688e4e8-e1da-4b57-9c6c-c1b6120db3c4}</Project>
+      <Name>Hitops3Updater_L</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DHAKA_ComLib\Hitops_L\Newtonsoft.Json\Newtonsoft.Json_L.csproj">
+      <Project>{a9ae40ff-1a21-414a-9fe7-3be13644cc6d}</Project>
+      <Name>Newtonsoft.Json_L</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DHAKA_ComLib\Hitops_L\RequestHandler\Hitops_L.csproj">
+      <Project>{bb829f49-f0b6-4d8a-bd86-6bab55fe99af}</Project>
+      <Name>Hitops_L</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DHAKA_ComLib\Hitops_L\SharpZipLib\ICSharpCode.SharpZLib_L.csproj">
+      <Project>{18d20629-913a-4474-b2d1-643290e14ed7}</Project>
+      <Name>ICSharpCode.SharpZLib_L</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\background.jpg" />
+    <Content Include="Resources\Bottom.gif" />
+    <Content Include="Resources\Bottom.png" />
+    <Content Include="Resources\Bottom1.gif" />
+    <Content Include="Resources\btn_cancel.jpg" />
+    <Content Include="Resources\Btn_login.gif" />
+    <Content Include="Resources\Btn_login_up.png" />
+    <Content Include="Resources\btn_ok.jpg" />
+    <Content Include="Resources\Close_01.gif" />
+    <Content Include="Resources\Environment.png" />
+    <Content Include="Resources\Environment_up.png" />
+    <Content Include="Resources\frmClose.png" />
+    <Content Include="Resources\frmCloseUp.png" />
+    <Content Include="Resources\HiTops_08.ico" />
+    <Content Include="Resources\LoginMain.jpg" />
+    <Content Include="Resources\LoginTop.png" />
+    <Content Include="Resources\login_background2.jpg" />
+    <Content Include="Resources\login_background3.png" />
+    <Content Include="Resources\login_background4.png" />
+    <Content Include="Resources\Login_bg2.png" />
+    <Content Include="Resources\login_btn.jpg" />
+    <Content Include="Resources\login_btn_close.jpg" />
+    <Content Include="Resources\login_btn_close_over.jpg" />
+    <Content Include="Resources\login_btn_over.jpg" />
+    <Content Include="Resources\login_input_id.jpg" />
+    <Content Include="Resources\login_input_pw.jpg" />
+    <Content Include="Resources\pwd.png" />
+    <Content Include="Resources\pwdUp.png" />
+    <Content Include="Resources\Standard_04.png" />
+    <Content Include="Resources\Standard_28.png" />
+    <Content Include="Resources\Standard_29.png" />
+    <Content Include="Resources\Top_BG.jpg" />
+    <None Include="Resources\transColor1.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
