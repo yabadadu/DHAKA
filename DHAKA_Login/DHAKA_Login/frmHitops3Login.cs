@@ -298,7 +298,7 @@ namespace Hitops3Login
                 switch (ex.Result)
                 {
                     case "ProtocolError":
-                        if(Hitops3Param.HITOPS3_PARAM.FRAMEWORK_SERVER_NAME == "SK_IT")
+                        if(Hitops3Param.HITOPS3_PARAM.FRAMEWORK_SERVER_NAME == "DHAKA")
                         {
                             //Hitops3Param.HITOPS3_PARAM.FRAMEWORK_SERVER_NAME = "HITOPS3_PSA_PNIT_FAIL";
                         }

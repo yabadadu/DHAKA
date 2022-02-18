@@ -95,6 +95,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="DLL\hitops.ini">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -112,7 +115,7 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\SK_IT_ComLib\Hitops_L\SmartThreadPool\SmartThreadPool_L.csproj">
+    <ProjectReference Include="..\..\DHAKA_ComLib\Hitops_L\SmartThreadPool\SmartThreadPool_L.csproj">
       <Project>{8684fc56-a679-4e2e-8f96-e172fb062eb6}</Project>
       <Name>SmartThreadPool_L</Name>
     </ProjectReference>
@@ -153,6 +156,7 @@
     <Content Include="Resources\login_background2.jpg" />
     <Content Include="Resources\login_background3.png" />
     <Content Include="Resources\login_background4.png" />
+    <Content Include="Resources\login_background_dhaka1.png" />
     <Content Include="Resources\Login_bg2.png" />
     <Content Include="Resources\login_btn.jpg" />
     <Content Include="Resources\login_btn_close.jpg" />
@@ -168,5 +172,6 @@
     <Content Include="Resources\Top_BG.jpg" />
     <None Include="Resources\transColor1.bmp" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

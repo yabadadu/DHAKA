@@ -163,7 +163,7 @@ namespace Hmx.DHAKA.TCS
                 }
                 //Get button image
                 Image img = (new SvgBitmap(buttonItem.ImageOptions.SvgImage)).Render(null, 1, 0);                
-                OpenForm("frm" + name, chgImageToIcon(img));
+                OpenForm("frm" + name, chgImageToIcon(img), buttonItem.Caption);
             }
             catch (HMMException ex)
             {
@@ -207,15 +207,16 @@ namespace Hmx.DHAKA.TCS
             Form tmpForm = null;
             switch (formName)
             {
-                case "frmMonitoring":                    
+                case "frmMonitoring":
                     tmpForm = new TruckDock.frmDesign();
                     tmpForm.Tag = "CRON";
                     tmpForm.Name = "frmMonitoring";
                     break;
             }
-            return tmpForm;            
+            return tmpForm;
         }
-        private void OpenForm(string formName, Icon icon)
+
+        private void OpenForm(string formName, Icon icon, string formTitle)
         {
             try
             {
@@ -226,6 +227,7 @@ namespace Hmx.DHAKA.TCS
                 Form selectedForm = GetAssemblyForm(formName);
 
                 if (icon != null) selectedForm.Icon = icon;
+                if (!string.IsNullOrEmpty(formTitle)) selectedForm.Text = formTitle;
                 CommFunc.CheckLoadForm(selectedForm);
 
                 // Close Wait SplashScreen

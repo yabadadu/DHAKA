@@ -142,7 +142,11 @@ namespace Hmx.DHAKA.TCS.TruckDock
             if (this.Tag == null) this.DiagFunc.IsEditable = true;
             if (this.DiagFunc.IsEditable) this.AddEventHandler();
 
-            this.WindowState = FormWindowState.Maximized;
+            this.Left = 0;
+            this.Top = 0;
+            this.Width = this.Parent.ClientSize.Width;
+            this.Height = this.Parent.ClientSize.Height;
+
             this.DiagFunc.InitDiagramControl(this.diagramControl1, this.ClientSize.Width , this.ClientSize.Height);            
 
             this.DoInquiry();

@@ -267,3 +267,4 @@ C:\Users\hmx200171\Documents\다카공항\DHAKA\TCS\bin\Debug\es\DevExpress.Xtra
 C:\Users\hmx200171\Documents\다카공항\DHAKA\TCS\bin\Debug\ja\DevExpress.XtraVerticalGrid.v18.2.resources.dll
 C:\Users\hmx200171\Documents\다카공항\DHAKA\TCS\bin\Debug\ru\DevExpress.XtraVerticalGrid.v18.2.resources.dll
 C:\Users\hmx200171\Documents\다카공항\DHAKA\TCS\obj\Debug\Hmx.DHAKA.TCS.TruckDock.frmDesign.resources
+C:\Users\hmx200171\Documents\다카공항\DHAKA\TCS\obj\Debug\Hmx.DHAKA.TCS.Registration.frmRegistrationAgent.resources

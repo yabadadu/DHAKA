@@ -85,7 +85,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackgroundImage = global::Hitops3Login.Properties.Resources.login_background4;
+            this.panel1.BackgroundImage = global::Hitops3Login.Properties.Resources.login_background_dhaka1;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.lblSystemName);
             this.panel1.Controls.Add(this.lblEnvironment);
